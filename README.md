@@ -18,3 +18,11 @@ let result = Mason.parse(jsonData, type: TestModel.self)
 
 and more...
 
+## Use it with Cocoapods
+
+Add the following line to `Podfile`
+
+```rb
+pod 'Mason', :git => 'https://github.com/Monsoir/Mason.git', :tag => "1.0.0"
+```
+
