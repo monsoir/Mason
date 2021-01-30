@@ -18,16 +18,76 @@ class MasonTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    struct TestModel: Codable {
+        let propertyA: String
+        let propertyB: Int
+        let nested: NestedTestModel
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    struct NestedTestModel: Codable {
+        let property1: String
+        let property2: Int
+    }
+
+    func testStringify() {
+        let nested = NestedTestModel(property1: "nested", property2: 10)
+        let model = TestModel(propertyA: "a", propertyB: 20, nested: nested)
+
+        let result = Mason.stringify(model)
+        XCTAssertNotNil(result)
+    }
+
+    func testParsingJSONStringToModel() {
+        let jsonInput = """
+                {
+                    "propertyA": "a",
+                    "propertyB": 20,
+                    "nested": {
+                        "property1": "nested",
+                        "property2": 10
+                    }
+                }
+                """
+
+        let result = Mason.parse(jsonInput, type: TestModel.self)
+        XCTAssertNotNil(result)
+    }
+
+    func testJsonify() {
+        let nested = NestedTestModel(property1: "nested", property2: 10)
+        let model = TestModel(propertyA: "a", propertyB: 20, nested: nested)
+
+        let result = Mason.jsonify(model)
+        XCTAssertNotNil(result)
+    }
+
+    func testParsingJSONDataToModel() {
+        let jsonData: [String: Any] = [
+            "propertyA": "a",
+            "propertyB": 20,
+            "nested": [
+                "property1": "nested",
+                "property2": 10,
+            ],
+        ]
+
+        let result = Mason.parse(jsonData, type: TestModel.self)
+        XCTAssertNotNil(result)
+    }
+
+    func testParsingJSONRawDataToModel() {
+        let jsonData: [String: Any] = [
+            "propertyA": "a",
+            "propertyB": 20,
+            "nested": [
+                "property1": "nested",
+                "property2": 10,
+            ],
+        ]
+
+        let rawData = try! JSONSerialization.data(withJSONObject: jsonData, options: [])
+        let result = Mason.parse(rawData, type: TestModel.self)
+        XCTAssertNotNil(result)
     }
 
 }
