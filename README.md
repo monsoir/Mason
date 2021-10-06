@@ -26,3 +26,8 @@ Add the following line to `Podfile`
 pod 'Mason', :git => 'https://github.com/Monsoir/Mason.git', :tag => "1.0.0"
 ```
 
+## Use it with Swift Package Manager
+
+```swift
+.package(url: "https://github.com/Monsoir/Mason.git", from: "2.0.0")
+```

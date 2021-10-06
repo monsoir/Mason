@@ -3,122 +3,147 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		"Mason::MasonPackageTests::ProductTarget" /* MasonPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_34 /* Build configuration list for PBXAggregateTarget "MasonPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_37 /* PBXTargetDependency */,
+			);
+			name = MasonPackageTests;
+			productName = MasonPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		44F6188225C314B00036AAAE /* Mason.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F6187825C314AF0036AAAE /* Mason.framework */; };
-		44F6188725C314B00036AAAE /* MasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F6188625C314B00036AAAE /* MasonTests.swift */; };
-		44F6188925C314B00036AAAE /* Mason.h in Headers */ = {isa = PBXBuildFile; fileRef = 44F6187B25C314AF0036AAAE /* Mason.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44F618D525C551D90036AAAE /* Mason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F618D425C551D90036AAAE /* Mason.swift */; };
+		4417FC84270DA36A00862E8B /* Mason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4417FC83270DA36A00862E8B /* Mason.swift */; };
+		OBJ_32 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_43 /* MasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MasonTests.swift */; };
+		OBJ_45 /* Mason.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Mason::Mason::Product" /* Mason.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		44F6188325C314B00036AAAE /* PBXContainerItemProxy */ = {
+		4417FC81270DA29C00862E8B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 44F6186F25C314AF0036AAAE /* Project object */;
+			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 44F6187725C314AF0036AAAE;
+			remoteGlobalIDString = "Mason::Mason";
 			remoteInfo = Mason;
+		};
+		4417FC82270DA29D00862E8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Mason::MasonTests";
+			remoteInfo = MasonTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		44F6187825C314AF0036AAAE /* Mason.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mason.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		44F6187B25C314AF0036AAAE /* Mason.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mason.h; sourceTree = "<group>"; };
-		44F6187C25C314AF0036AAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44F6188125C314B00036AAAE /* MasonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44F6188625C314B00036AAAE /* MasonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasonTests.swift; sourceTree = "<group>"; };
-		44F6188825C314B00036AAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44F618D425C551D90036AAAE /* Mason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mason.swift; sourceTree = "<group>"; };
+		4417FC83270DA36A00862E8B /* Mason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mason.swift; sourceTree = "<group>"; };
+		4417FC85270DA3E800862E8B /* Mason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mason.h; sourceTree = "<group>"; };
+		"Mason::Mason::Product" /* Mason.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Mason.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Mason::MasonTests::Product" /* MasonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = MasonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_13 /* MasonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasonTests.swift; sourceTree = "<group>"; };
+		OBJ_17 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_18 /* Mason.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mason.podspec; sourceTree = "<group>"; };
+		OBJ_19 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		44F6187525C314AF0036AAAE /* Frameworks */ = {
+		OBJ_26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44F6187E25C314B00036AAAE /* Frameworks */ = {
+		OBJ_44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				44F6188225C314B00036AAAE /* Mason.framework in Frameworks */,
+				OBJ_45 /* Mason.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		44F6186E25C314AF0036AAAE = {
+		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				44F6187A25C314AF0036AAAE /* Mason */,
-				44F6188525C314B00036AAAE /* MasonTests */,
-				44F6187925C314AF0036AAAE /* Products */,
+				OBJ_11 /* MasonTests */,
 			);
-			sourceTree = "<group>";
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
 		};
-		44F6187925C314AF0036AAAE /* Products */ = {
+		OBJ_11 /* MasonTests */ = {
 			isa = PBXGroup;
 			children = (
-				44F6187825C314AF0036AAAE /* Mason.framework */,
-				44F6188125C314B00036AAAE /* MasonTests.xctest */,
+				OBJ_12 /* Info.plist */,
+				OBJ_13 /* MasonTests.swift */,
+			);
+			name = MasonTests;
+			path = Tests/MasonTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Mason::Mason::Product" /* Mason.framework */,
+				"Mason::MasonTests::Product" /* MasonTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		44F6187A25C314AF0036AAAE /* Mason */ = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
-				44F6187B25C314AF0036AAAE /* Mason.h */,
-				44F6187C25C314AF0036AAAE /* Info.plist */,
-				44F618D325C551AC0036AAAE /* Source */,
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_14 /* Products */,
+				OBJ_17 /* LICENSE */,
+				OBJ_18 /* Mason.podspec */,
+				OBJ_19 /* README.md */,
 			);
-			path = Mason;
+			name = "";
 			sourceTree = "<group>";
 		};
-		44F6188525C314B00036AAAE /* MasonTests */ = {
+		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				44F6188625C314B00036AAAE /* MasonTests.swift */,
-				44F6188825C314B00036AAAE /* Info.plist */,
+				OBJ_8 /* Mason */,
 			);
-			path = MasonTests;
-			sourceTree = "<group>";
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
 		};
-		44F618D325C551AC0036AAAE /* Source */ = {
+		OBJ_8 /* Mason */ = {
 			isa = PBXGroup;
 			children = (
-				44F618D425C551D90036AAAE /* Mason.swift */,
+				4417FC85270DA3E800862E8B /* Mason.h */,
+				4417FC83270DA36A00862E8B /* Mason.swift */,
 			);
-			path = Source;
-			sourceTree = "<group>";
+			name = Mason;
+			path = Sources/Mason;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		44F6187325C314AF0036AAAE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44F6188925C314B00036AAAE /* Mason.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		44F6187725C314AF0036AAAE /* Mason */ = {
+		"Mason::Mason" /* Mason */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44F6188C25C314B00036AAAE /* Build configuration list for PBXNativeTarget "Mason" */;
+			buildConfigurationList = OBJ_21 /* Build configuration list for PBXNativeTarget "Mason" */;
 			buildPhases = (
-				44F6187325C314AF0036AAAE /* Headers */,
-				44F6187425C314AF0036AAAE /* Sources */,
-				44F6187525C314AF0036AAAE /* Frameworks */,
-				44F6187625C314AF0036AAAE /* Resources */,
+				OBJ_24 /* Sources */,
+				OBJ_26 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,347 +151,368 @@
 			);
 			name = Mason;
 			productName = Mason;
-			productReference = 44F6187825C314AF0036AAAE /* Mason.framework */;
+			productReference = "Mason::Mason::Product" /* Mason.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		44F6188025C314B00036AAAE /* MasonTests */ = {
+		"Mason::MasonTests" /* MasonTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44F6188F25C314B00036AAAE /* Build configuration list for PBXNativeTarget "MasonTests" */;
+			buildConfigurationList = OBJ_39 /* Build configuration list for PBXNativeTarget "MasonTests" */;
 			buildPhases = (
-				44F6187D25C314B00036AAAE /* Sources */,
-				44F6187E25C314B00036AAAE /* Frameworks */,
-				44F6187F25C314B00036AAAE /* Resources */,
+				OBJ_42 /* Sources */,
+				OBJ_44 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				44F6188425C314B00036AAAE /* PBXTargetDependency */,
+				OBJ_46 /* PBXTargetDependency */,
 			);
 			name = MasonTests;
 			productName = MasonTests;
-			productReference = 44F6188125C314B00036AAAE /* MasonTests.xctest */;
+			productReference = "Mason::MasonTests::Product" /* MasonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Mason::SwiftPMPackageDescription" /* MasonPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_28 /* Build configuration list for PBXNativeTarget "MasonPackageDescription" */;
+			buildPhases = (
+				OBJ_31 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MasonPackageDescription;
+			productName = MasonPackageDescription;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		44F6186F25C314AF0036AAAE /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
 				TargetAttributes = {
-					44F6187725C314AF0036AAAE = {
-						CreatedOnToolsVersion = 12.4;
-						LastSwiftMigration = 1240;
-					};
-					44F6188025C314B00036AAAE = {
-						CreatedOnToolsVersion = 12.4;
+					"Mason::Mason" = {
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
-			buildConfigurationList = 44F6187225C314AF0036AAAE /* Build configuration list for PBXProject "Mason" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Mason" */;
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = 44F6186E25C314AF0036AAAE;
-			productRefGroup = 44F6187925C314AF0036AAAE /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				44F6187725C314AF0036AAAE /* Mason */,
-				44F6188025C314B00036AAAE /* MasonTests */,
+				"Mason::Mason" /* Mason */,
+				"Mason::SwiftPMPackageDescription" /* MasonPackageDescription */,
+				"Mason::MasonPackageTests::ProductTarget" /* MasonPackageTests */,
+				"Mason::MasonTests" /* MasonTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		44F6187625C314AF0036AAAE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		44F6187F25C314B00036AAAE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		44F6187425C314AF0036AAAE /* Sources */ = {
+		OBJ_24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				44F618D525C551D90036AAAE /* Mason.swift in Sources */,
+				4417FC84270DA36A00862E8B /* Mason.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44F6187D25C314B00036AAAE /* Sources */ = {
+		OBJ_31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				44F6188725C314B00036AAAE /* MasonTests.swift in Sources */,
+				OBJ_32 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_43 /* MasonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		44F6188425C314B00036AAAE /* PBXTargetDependency */ = {
+		OBJ_37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 44F6187725C314AF0036AAAE /* Mason */;
-			targetProxy = 44F6188325C314B00036AAAE /* PBXContainerItemProxy */;
+			target = "Mason::MasonTests" /* MasonTests */;
+			targetProxy = 4417FC82270DA29D00862E8B /* PBXContainerItemProxy */;
+		};
+		OBJ_46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Mason::Mason" /* Mason */;
+			targetProxy = 4417FC81270DA29C00862E8B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		44F6188A25C314B00036AAAE /* Debug */ = {
+		OBJ_22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Mason.xcodeproj/Mason_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Mason;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Mason;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Mason.xcodeproj/Mason_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Mason;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Mason;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.5.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
-					"$(inherited)",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
-		44F6188B25C314B00036AAAE /* Release */ = {
+		OBJ_30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.5.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
-		44F6188D25C314B00036AAAE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Mason/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ryanman.Mason;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		44F6188E25C314B00036AAAE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Mason/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ryanman.Mason;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		44F6189025C314B00036AAAE /* Debug */ = {
+		OBJ_40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MasonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ryanman.MasonTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Mason.xcodeproj/MasonTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = MasonTests;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
-		44F6189125C314B00036AAAE /* Release */ = {
+		OBJ_41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MasonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ryanman.MasonTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Mason.xcodeproj/MasonTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = MasonTests;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		44F6187225C314AF0036AAAE /* Build configuration list for PBXProject "Mason" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "Mason" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44F6188A25C314B00036AAAE /* Debug */,
-				44F6188B25C314B00036AAAE /* Release */,
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44F6188C25C314B00036AAAE /* Build configuration list for PBXNativeTarget "Mason" */ = {
+		OBJ_21 /* Build configuration list for PBXNativeTarget "Mason" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44F6188D25C314B00036AAAE /* Debug */,
-				44F6188E25C314B00036AAAE /* Release */,
+				OBJ_22 /* Debug */,
+				OBJ_23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44F6188F25C314B00036AAAE /* Build configuration list for PBXNativeTarget "MasonTests" */ = {
+		OBJ_28 /* Build configuration list for PBXNativeTarget "MasonPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44F6189025C314B00036AAAE /* Debug */,
-				44F6189125C314B00036AAAE /* Release */,
+				OBJ_29 /* Debug */,
+				OBJ_30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_34 /* Build configuration list for PBXAggregateTarget "MasonPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_35 /* Debug */,
+				OBJ_36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_39 /* Build configuration list for PBXNativeTarget "MasonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_40 /* Debug */,
+				OBJ_41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 44F6186F25C314AF0036AAAE /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }
