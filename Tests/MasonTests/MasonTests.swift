@@ -33,8 +33,7 @@ class MasonTests: XCTestCase {
         let nested = NestedTestModel(property1: "nested", property2: 10)
         let model = TestModel(propertyA: "a", propertyB: 20, nested: nested)
 
-        let result = Mason.stringify(model)
-        XCTAssertNotNil(result)
+        XCTAssertNoThrow(try Mason.stringify(model))
     }
 
     func testParsingJSONStringToModel() {
@@ -49,16 +48,14 @@ class MasonTests: XCTestCase {
                 }
                 """
 
-        let result = Mason.parse(jsonInput, type: TestModel.self)
-        XCTAssertNotNil(result)
+        XCTAssertNoThrow(try Mason.parse(jsonInput, type: TestModel.self))
     }
 
     func testJsonify() {
         let nested = NestedTestModel(property1: "nested", property2: 10)
         let model = TestModel(propertyA: "a", propertyB: 20, nested: nested)
 
-        let result = Mason.jsonify(model)
-        XCTAssertNotNil(result)
+        XCTAssertNoThrow(try Mason.jsonify(model))
     }
 
     func testParsingJSONDataToModel() {
@@ -71,8 +68,7 @@ class MasonTests: XCTestCase {
             ],
         ]
 
-        let result = Mason.parse(jsonData, type: TestModel.self)
-        XCTAssertNotNil(result)
+        XCTAssertNoThrow(try Mason.parse(jsonData, type: TestModel.self))
     }
 
     func testParsingJSONRawDataToModel() {
@@ -86,8 +82,6 @@ class MasonTests: XCTestCase {
         ]
 
         let rawData = try! JSONSerialization.data(withJSONObject: jsonData, options: [])
-        let result = Mason.parse(rawData, type: TestModel.self)
-        XCTAssertNotNil(result)
+        XCTAssertNoThrow(try Mason.parse(rawData, type: TestModel.self))
     }
-
 }
