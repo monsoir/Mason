@@ -26,6 +26,23 @@ public struct Mason {
         return result
     }
 
+    /// 将 JSON 二进制数据转换为模型数据
+    /// - Parameters:
+    ///   - value: 待转换的 JSON 二进制数据
+    ///   - type: 模型类型
+    public static func parse<T: Decodable>(_ value: Data, type: T.Type) throws -> T {
+        let result = try JSONDecoder().decode(type, from: value)
+        return result
+    }
+
+    /// 将 JSON 字符串转换为字典
+    /// - Parameter value: 待转换的 JSON 字符串
+    /// - Returns: 转换后的字典
+    public static func parse(_ value: String) throws -> [String: Any]? {
+        guard let data = value.data(using: .utf8) else { return nil }
+        return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+    }
+
     /// 将模型数据转换为 JSON 数据
     /// - Parameter value: 待转换的模型数据
     public static func jsonify<T: Encodable>(_ value: T) throws -> Any {
@@ -41,15 +58,6 @@ public struct Mason {
     public static func parse<T: Decodable>(_ value: Any, type: T.Type) throws -> T {
         let jsonObject = try JSONSerialization.data(withJSONObject: value, options: [])
         let result = try JSONDecoder().decode(type, from: jsonObject)
-        return result
-    }
-
-    /// 将裸数据转换为模型数据
-    /// - Parameters:
-    ///   - value: 待转换的裸数据
-    ///   - type: 模型类型
-    public static func parse<T: Decodable>(_ value: Data, type: T.Type) throws -> T {
-        let result = try JSONDecoder().decode(type, from: value)
         return result
     }
 }

@@ -23,7 +23,7 @@ and more...
 Add the following line to `Podfile`
 
 ```rb
-pod 'Mason', :git => 'https://github.com/Monsoir/Mason.git', :tag => "1.0.0"
+pod 'Mason', :git => 'https://github.com/Monsoir/Mason.git', :tag => "2.2.0"
 ```
 
 ## Use it with Swift Package Manager

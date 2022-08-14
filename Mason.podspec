@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Mason"
-  spec.version      = "1.0.0"
+  spec.version      = "2.2.0"
   spec.summary      = "A simple JSON handle wrapper in Swift, making it available to handle JSON like JavaScript."
 
   spec.homepage     = "https://github.com/Monsoir/Mason"
@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/Monsoir/Mason.git", :branch => "main", :tag => "#{spec.version}" }
 
-  spec.source_files  = ["Mason/Mason.h", "Mason/Source/**/*.swift"]
+  spec.source_files  = ["Sources/Mason/Mason.h", "Sources/Mason/**/*.swift"]
 
   spec.requires_arc = true
 

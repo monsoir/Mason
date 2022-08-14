@@ -51,6 +51,38 @@ class MasonTests: XCTestCase {
         XCTAssertNoThrow(try Mason.parse(jsonInput, type: TestModel.self))
     }
 
+    func testParsingJSONBinaryDataToModel() {
+        let jsonInput = """
+                {
+                    "propertyA": "a",
+                    "propertyB": 20,
+                    "nested": {
+                        "property1": "nested",
+                        "property2": 10
+                    }
+                }
+                """
+        let data = jsonInput.data(using: .utf8)!
+
+        XCTAssertNoThrow(try Mason.parse(data, type: TestModel.self))
+    }
+
+    func testParsingJSONStringToJSONRawData() {
+        let jsonInput = """
+                {
+                    "propertyA": "a",
+                    "propertyB": 20,
+                    "nested": {
+                        "property1": "nested",
+                        "property2": 10
+                    }
+                }
+                """
+
+        XCTAssertNoThrow(try Mason.parse(jsonInput))
+        XCTAssertNotNil(try! Mason.parse(jsonInput))
+    }
+
     func testJsonify() {
         let nested = NestedTestModel(property1: "nested", property2: 10)
         let model = TestModel(propertyA: "a", propertyB: 20, nested: nested)
